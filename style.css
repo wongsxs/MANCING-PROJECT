@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  overflow: hidden;
+  background-color: #87CEEB;
+}
+
+#sky {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 40%;
+  background: linear-gradient(to bottom, #87CEEB, #B0E0E6);
+  z-index: 1;
+  overflow: hidden;
+}
+
+
+
+#sun {
+  width: 80px;
+  height: 80px;
+  background: yellow;
+  border-radius: 50%;
+  position: absolute;
+  top: 40px;
+  left: 50px;
+  box-shadow: 0 0 30px yellow;
+}
+
+#mountain {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.8;
+}
+
+.cloud {
+  width: 100px;
+  height: 60px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 60px;
+  animation: moveCloud 30s linear infinite;
+}
+
+@keyframes moveCloud {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(100vw); }
+}
+
+#lake {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  height: 60%;
+  background: #4682B4;
+  overflow: hidden;
+  z-index: 0;
+}
+#boat {
+  width: 140px;
+  height: 40px;
+  background: saddlebrown;
+  position: absolute;
+  top: 80px; /* semula 10px */
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 0 0 20px 20px;
+  z-index: 2;
+}
+
+
+#person {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: auto;
+  z-index: 1;
+}
+
+#person img {
+  width: 100%;
+  height: auto;
+   z-index: 1;
+}
+
+#rod-line {
+  position: absolute;
+  top: 80px;
+  left: 48%;
+  width: 2px;
+  height: 0px;
+  background: rgb(128, 87, 22);
+  transform: translateX(-50%);
+  transition: height 0.5s;
+}
+
+#controls {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+}
+
+button {
+  font-size: 20px;
+  padding: 10px 20px;
+  background: #f4a261;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px #333;
+}
+
+#catch-result {
+  margin-top: 10px;
+  font-size: 22px;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+
+.top-buttons {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.top-buttons a button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.top-buttons a button:hover {
+  filter: brightness(0.9);
+}
+
