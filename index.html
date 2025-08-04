@@ -2,14 +2,15 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tri Wahyudi - Personal Landing Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tri Wahyudi - Landing Page</title>
   <style>
     :root {
-      --primary: #1e88e5;
-      --bg: #f9fbfc;
-      --text: #2c3e50;
-      --accent: #1565c0;
+      --primary: #0d47a1;
+      --accent: #42a5f5;
+      --bg: #e3f2fd;
+      --text: #263238;
+      --white: #ffffff;
     }
 
     * {
@@ -26,61 +27,76 @@
     }
 
     .container {
-      max-width: 1000px;
+      max-width: 1100px;
       margin: auto;
       padding: 40px 20px;
     }
 
     header {
-      text-align: center;
+      background: linear-gradient(to right, var(--primary), var(--accent));
+      color: var(--white);
       padding: 60px 20px 30px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+      animation: fadeIn 1s ease-in-out;
     }
 
     header h1 {
-      font-size: 2.5rem;
-      color: var(--primary);
+      font-size: 3rem;
     }
 
     header p {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       margin-top: 10px;
-      color: #555;
-    }
-
-    nav {
-      margin-top: 20px;
     }
 
     nav a {
-      margin: 0 10px;
+      margin: 0 12px;
+      color: var(--white);
       text-decoration: none;
-      color: var(--accent);
-      font-weight: 600;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffeb3b;
     }
 
     section {
-      padding: 40px 0;
-      border-bottom: 1px solid #ddd;
-    }
-
-    section:last-child {
-      border-bottom: none;
+      margin-top: 50px;
+      padding: 30px;
+      background: var(--white);
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.05);
+      animation: fadeInUp 0.7s ease forwards;
     }
 
     section h2 {
-      font-size: 1.6rem;
-      margin-bottom: 15px;
       color: var(--primary);
-    }
-
-    section p, section ul {
-      font-size: 1rem;
-      color: #444;
+      margin-bottom: 20px;
     }
 
     ul {
-      list-style-type: disc;
-      margin-left: 20px;
+      padding-left: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: var(--primary);
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: var(--accent);
+      transform: scale(1.05);
     }
 
     footer {
@@ -90,28 +106,14 @@
       font-size: 0.9rem;
     }
 
-    .button {
-      display: inline-block;
-      margin-top: 20px;
-      background-color: var(--primary);
-      color: white;
-      padding: 10px 20px;
-      border-radius: 6px;
-      text-decoration: none;
-      transition: background 0.3s;
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
     }
 
-    .button:hover {
-      background-color: var(--accent);
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
-      section h2 {
-        font-size: 1.3rem;
-      }
+    @keyframes fadeInUp {
+      0% {opacity: 0; transform: translateY(20px);}
+      100% {opacity: 1; transform: translateY(0);}
     }
   </style>
 </head>
