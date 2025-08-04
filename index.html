@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tri Wahyudi - Personal Landing Page</title>
+  <style>
+    :root {
+      --primary: #1e88e5;
+      --bg: #f9fbfc;
+      --text: #2c3e50;
+      --accent: #1565c0;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: var(--primary);
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-top: 10px;
+      color: #555;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    section {
+      padding: 40px 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    section:last-child {
+      border-bottom: none;
+    }
+
+    section h2 {
+      font-size: 1.6rem;
+      margin-bottom: 15px;
+      color: var(--primary);
+    }
+
+    section p, section ul {
+      font-size: 1rem;
+      color: #444;
+    }
+
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 10px;
+      color: #777;
+      font-size: 0.9rem;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: var(--primary);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .button:hover {
+      background-color: var(--accent);
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      section h2 {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Tri Wahyudi</h1>
+      <p>Content Creator | Web Developer | PC Builder</p>
+      <nav>
+        <a href="#about">Tentang</a>
+        <a href="#skills">Keahlian</a>
+        <a href="#projects">Proyek</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+    </header>
+
+    <section id="about">
+      <h2>Tentang Saya</h2>
+      <p>
+        Saya adalah Content Creator dan Web Developer yang bersemangat. Menguasai HTML dan CSS,
+        serta sedang mendalami JavaScript, PHP, dan MySQL. Saya juga hobi merakit PC dan suka
+        menciptakan solusi kreatif berbasis web.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Keahlian</h2>
+      <ul>
+        <li>HTML & CSS (Advanced)</li>
+        <li>JavaScript, PHP (Intermediate)</li>
+        <li>MySQL / Database (Basic)</li>
+        <li>PC Assembly & Troubleshooting</li>
+        <li>Content Creation & Branding</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Proyek Unggulan</h2>
+      <p><strong>Game Simulasi Memancing Berbasis Web</strong></p>
+      <ul>
+        <li>Login, Inventori, dan Sistem Toko</li>
+        <li>HTML, CSS, JS, PHP, dan MySQL</li>
+        <li>Interaktif, bergaya kartun</li>
+      </ul>
+      <p><strong><a href="https://wongsxs.ct.ws" target="_blank">Landing Page WongsXS</a></strong></p>
+      <p>Website personal branding ringan dan modern, dibuat menggunakan HTML + CSS.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Kontak</h2>
+      <p>Email: <a href="mailto:Triw0224@gmail.com">Triw0224@gmail.com</a></p>
+      <p>Lokasi: Kebumen</p>
+      <a class="button" href="mailto:Triw0224@gmail.com">Hubungi Saya</a>
+    </section>
+
+    <footer>
+      &copy; 2025 Tri Wahyudi. Dibuat dengan HTML & CSS.
+    </footer>
+  </div>
+</body>
+</html>
